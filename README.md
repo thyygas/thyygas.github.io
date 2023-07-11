@@ -16,8 +16,8 @@
     </style>
   </head>
   <body>
-    <img src="images/neo_neo_animated.webp" />
+    <img src="neo_neo_animated.webp" />
     <h1>neo neo</h1>
   </body>
 </html>
-v
+  
