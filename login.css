@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    min-height: 100vh;
+    background: url(images/Asset\ 4.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: -1px 0 10px rgba(0,0,0,.2);
+    border-left: 2px solid rgba(0,0,0,.2);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    
+}
+
+.wrapper .logreg-box {
+    width: 100%;
+}
+
+.wrapper .form.boxlogin {
+    display:none
+}
+
+
+.logreg-box .logreg-tittle{
+    text-align: center;
+    margin-bottom: 40px;
+    color: antiquewhite;
+
+}
+
+.logreg-tittle h2{
+    font-size: 32px;
+
+}
+
+.logreg-tittle p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logreg-box .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: antiquewhite;
+    font-weight: 500;
+    padding-right: 25px;
+
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: antiquewhite;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+
+.input-box .icon{
+    position: absolute;
+    right: 0px;
+    top: 14px;
+    transform: translateY(-50%);
+    font-size: 19px;
+    color: antiquewhite;
+}
+
+.logreg-box .remember-forgot{
+    font-size: 14.5px;
+    color: antiquewhite;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.logreg-box .btn {
+    width: 100%;
+    height: 45px;
+    background: antiquewhite;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.logreg-box .logreg-link{
+    font-size: 14.5px;
+    color: antiquewhite;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 15px;
+
+}
+
+.logreg-link p a {
+    color: aqua;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logreg-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos gerais para o site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para dispositivos maiores (desktops e laptops) */
+  @media screen and (min-width: 768px) {
+    /* Exemplo: aumentar o tamanho da fonte em dispositivos maiores */
+    body {
+      font-size: 16px;
+    }
+  
+    /* Exemplo: alinhar o conteúdo centralizado */
+    .container {
+      text-align: center;
+    }
+  }
+  
+  /* Estilos para dispositivos menores (tablets e celulares) */
+  @media screen and (max-width: 767px) {
+    /* Exemplo: diminuir o tamanho da fonte em dispositivos menores */
+    body {
+      font-size: 14px;
+    }
+  
+    /* Exemplo: alinhar o conteúdo à esquerda */
+    .container {
+      text-align: left;
+    }
+  }
+  
