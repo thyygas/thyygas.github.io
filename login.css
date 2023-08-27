@@ -6,7 +6,7 @@
 
 .section{
     min-height: 100vh;
-    background: url(Asset 4.svg);
+    background: url(Asset\ 4.svg);
     background-size: cover;
     background-position: center;
 }
