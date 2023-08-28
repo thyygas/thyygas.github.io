@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>video</title>
+    <title>Vídeos</title>
+    <link rel="stylesheet" type="text/css" href="projetos.css">
 </head>
 <body>
-    <h1>olho_maluco</h1>
-
-<video width="640" height="360" controls loop>
-    <source src="Composição 1.mp4" type="video/mp4">
-    
-</video>
-    
-    
+    <div class="video-container">
+        <div class="video">
+            <video controls loop>
+                <source src="Composição 1.mp4" type="video/mp4">
+            </video>
+            <p class="video-label">Primeiro</p>
+        </div>
+        
+        <div class="video">
+            <video controls loop>
+                <source src="olho_piscante.mp4" type="video/mp4">
+            </video>
+            <p class="video-label">Segundo</p>
+        </div>
+    </div>
 </body>
 </html>
